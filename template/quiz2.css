@@ -1,5 +1,5 @@
 html body {
-	font-family: 'Helvetica', Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	color: #111
 	background: #E7E7E7;
 }
@@ -8,39 +8,60 @@ a {
 	color: #0078A0;
 }
 
+button {
+	cursor: pointer;
+}
+
 .content {
-	text-align: center
-	padding: 0 15% 20px;
+	text-align: left;
+	padding: 0 10% 0 20px;
+	border: 1px solid #555;
 }
 
 .content h1 {
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: bold;
 	margin: 20px 0;
+}
 
+.content .subtitle {
+	font-size: 14px;
+	font-style: italic;
+}
 
-content form {
+.content span {
+	font-weight: bold;
+}
+
+.content form {
 	padding: 10px;
 	width: 300px;
 	margin: 0 auto;
 }
 
-.content form input {
+.content form input[type="text"] {
 	width: 100%;
-	// border: 2px solid #107394;
-	color: #107394;
-	background: transparent;
-	magrin-bottom: 15px;
+	/*border: 2px solid #107394;*/
+	color: #111;
+	background: #FFF;
+	margin: 15px 0;
 }
 
-.content div {
+.content form input[type="submit"] {
+	cursor: pointer;
+}
+
+.content div > div {
 	margin-bottom: 25px;
 	padding: 10px;
 	width: 100%;
+	text-transform: capitalize;
+	border: 1px solid #555;
 }
 
 .click {
 	background: #ADD8E6;
+	cursor: pointer;
 }
 
 .mouse-over {
@@ -48,9 +69,21 @@ content form {
 }
 
 .submit {
-	background: #43AC6A;
+	background: #59BF7C;
 }
 
 .timeout {
-	background: #CCCCCC;
+	background: #5F6EB3;
+	color: white;
+	display: none;
+}
+
+.added {
+	margin-bottom: 25px;
+}
+
+#gt-response {
+	margin: 15px 0;
+	font-weight: bold;
+	font-size: 20px;
 }
